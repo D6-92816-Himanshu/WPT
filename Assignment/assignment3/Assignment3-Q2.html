@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment3_2</title>
+  <style>
+    body {
+      margin: 20px;
+    }
+    .row {
+      display: flex;
+      height: 40px;
+      margin-bottom: 10px;
+    }
+    .red { background-color: red; }
+    .blue { background-color: blue; }
+    .green { background-color: green; }
+    .orange { background-color: orange; }
+    
+    /* Row-specific styles */
+    .row1 .red { flex: 1; }
+    .row1 .blue { flex: 1; }
+
+    .row2 .green { flex: 1; }
+    .row2 .blue { width: 5%; }
+
+    .row3 .red { width: 5%; }
+    .row3 .green { flex: 1; }
+    .row3 .blue { width: 5%; }
+
+    .row4 .red { flex: 1; }
+    .row4 .blue { width: 5%; }
+
+    .row5 .green{ width: 100% }
+    .row5 .red {
+      width: 30px;
+      height: 30px;
+      margin-top: 5px;
+      margin-left: 49%;
+    }
+
+    .row6 .red { flex: 1; }
+    .row6 .blue { width: 40px }
+
+    .row7 .red { flex: 1; width: 5%; }
+    .row7 .blue { width: 90%; }
+    .row7 .green{ flex: 1;width: 100%; height: 10px; margin-top: 14px;}
+
+    .row8 .green { flex: 1; }
+    .row8 .orange { width: 60px }
+
+    .row9 .orange { flex: 1; }
+    .row9 .green { width: 20px }
+  </style>
+</head>
+<body>
+
+  <p><b>Row 1</b></p>
+  <div class="row row1">
+    <div class="red"></div>
+    <div class="blue"></div>
+  </div>
+
+  <p><b>Row 2</b></p>
+  <div class="row row2">
+    <div class="green"></div>
+    <div class="blue"></div>
+  </div>
+
+  <p><b>Student TODOs</b></p>
+  <p><b>Row 3</b></p>
+  <div class="row row3">
+    <div class="red"></div>
+    <div class="green"></div>
+    <div class="blue"></div>
+  </div>
+
+  <p><b>Row 4</b></p>
+  <div class="row row4">
+    <div class="red"></div>
+    <div class="blue"></div>
+  </div>
+
+  <p><b>Row 5</b></p>
+  <div class="row row5">
+    <div class="green">
+      <div class="red"></div>
+    </div>
+  </div>
+
+  <p><b>Row 6</b></p>
+  <div class="row row6">
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="red"></div>
+  </div>
+
+  <p><b>Row 7</b></p>
+  <div class="row row7">
+    <div class="red"></div>
+    <div class="blue">
+      <div class="green"></div>
+    </div>
+  </div>
+
+  <p><b>Row 8</b></p>
+  <div class="row row8">
+    <div class="orange"></div>
+    <div class="green"></div>
+    <div class="orange"></div>
+    <div class="green"></div>
+    <div class="orange"></div>
+    <div class="green"></div>
+    <div class="orange"></div>
+    <div class="green"></div>
+    <div class="orange"></div>
+  </div>
+
+  <p><b>Row 9</b></p>
+  <div class="row row9">
+    <div class="orange"></div>
+    <div class="green"></div>
+    <div class="orange"></div>
+    <div class="green"></div>
+    <div class="orange"></div>
+    <div class="green"></div>
+    <div class="orange"></div>
+    <div class="green"></div>
+    <div class="orange"></div>
+  </div>
+
+</body>
+</html>
