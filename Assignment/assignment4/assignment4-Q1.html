@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 4</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: #444;
+      font-family: Arial, sans-serif;
+    }
+    .header-bar {
+      background: #666;
+      border-radius: 5px;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 15px auto;
+      width: 70%;
+    }
+    .header-icons i {
+      font-size: 22px;
+      margin: 0 8px;
+      cursor: pointer;
+      color: white;
+    }
+    .header-bar h4 {
+      color: white;
+      margin: 0;
+    }
+    .donate-btn {
+      background: skyblue;
+      border: none;
+      border-radius: 5px;
+      padding: 5px 15px;
+      font-weight: bold;
+    }
+    .notes-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+      width: 80%;
+      margin: auto;
+    }
+    .note {
+      position: relative;
+      padding: 10px;
+      color: #000;
+      min-height: 280px;
+      border-radius: 5px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+      background: #fffbe7;
+    }
+    .note .date-time {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .note textarea {
+      width: 100%;
+      height: 100px;
+      border: none;
+      resize: none;
+      background: transparent;
+      outline: none;
+      font-size: 14px;
+    }
+    .pin-icon {
+      position: absolute;
+      top: -10px;
+      left: 45%;
+      font-size: 22px;
+      color: blue;
+    }
+    .close-btn {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      color: red;
+      font-size: 18px;
+      cursor: pointer;
+    }
+    .red { background: #ff6961; }
+    .blue { background: #77ddf7; }
+    .orange { background: #ffcc80; }
+    .purple { background: #b19cd9; }
+  </style>
+</head>
+<body>
+  <div class="header-bar">
+    <h4>HTML5Sticky<br><small>sticky notes for web!</small></h4>
+    <div class=" header-icons">
+      <i class="bi bi-check-circle-fill text-success"></i>
+      <i class="bi bi-x-circle-fill text-danger"></i>
+      <i class="bi bi-search text-white"></i>
+      <i class="bi bi-file-earmark-fill text-white"></i>
+    </div>
+    <i class="bi bi-twitter-x" style="margin-right: -29%;"></i> 
+    <button class="donate-btn">$ Donate</button>
+  </div>
+
+  <div class="notes-container">
+    <div class="note red">
+      <i class="bi bi-pin-angle-fill pin-icon"></i>
+      <span class="close-btn">&times;</span>
+      <div class="date-time">9/18/2025 12:40 PM</div>
+      <textarea placeholder="Text here..."></textarea>
+    </div>
+    <div class="note blue">
+      <i class="bi bi-pin-angle-fill pin-icon"></i>
+      <span class="close-btn">&times;</span>
+      <div class="date-time">9/18/2025 12:40 PM</div>
+      <textarea placeholder="Text here..."></textarea>
+    </div>
+    <div class="note orange">
+      <i class="bi bi-pin-angle-fill pin-icon"></i>
+      <span class="close-btn">&times;</span>
+      <div class="date-time">9/18/2025 12:40 PM</div>
+      <textarea placeholder="Text here..."></textarea>
+    </div>
+    <div class="note purple">
+      <i class="bi bi-pin-angle-fill pin-icon"></i>
+      <span class="close-btn">&times;</span>
+      <div class="date-time">9/18/2025 12:40 PM</div>
+      <textarea placeholder="Text here..."></textarea>
+    </div>
+    <div class="note red">
+      <i class="bi bi-pin-angle-fill pin-icon"></i>
+      <span class="close-btn">&times;</span>
+      <div class="date-time">9/18/2025 12:40 PM</div>
+      <textarea placeholder="Text here..."></textarea>
+    </div>
+    <div class="note blue">
+      <i class="bi bi-pin-angle-fill pin-icon"></i>
+      <span class="close-btn">&times;</span>
+      <div class="date-time">9/18/2025 12:40 PM</div>
+      <textarea placeholder="Text here..."></textarea>
+    </div>
+    <div class="note orange">
+      <i class="bi bi-pin-angle-fill pin-icon"></i>
+      <span class="close-btn">&times;</span>
+      <div class="date-time">9/18/2025 12:40 PM</div>
+      <textarea placeholder="Text here..."></textarea>
+    </div>
+    <div class="note purple">
+      <i class="bi bi-pin-angle-fill pin-icon"></i>
+      <span class="close-btn">&times;</span>
+      <div class="date-time">9/18/2025 12:40 PM</div>
+      <textarea placeholder="Text here..."></textarea>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
