@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5_2</title>
+</head>
+<body>
+    <script>
+        var num1=window.prompt("Enter the number of times to print th emessage.")
+        if (isNaN(num1) || num1 < 0) {
+            window.alert("Enter Postive Number")
+        }
+        var msg=window.prompt("Enter the message")
+        console.log("Repeated Messsage:")
+        for (let index = 1; index <= num1; index++) {
+            console.log(index +"." +msg)
+        }        
+        window.alert("Check the console for the reapeated messages!")
+    </script>
+</body>
+</html>
