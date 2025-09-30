@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment6_1</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    h1 {
+      text-align: left;
+    }
+    h1 {
+      color: black;
+      font-size: 28px;
+    }
+    .red {
+      color: red;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .blue {
+      color: blue;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Date &amp; Greeting Web Page</h1>
+  <p class="red" id="dateGreeting"></p>
+  <p class="blue" id="daysLeft"></p>
+
+  <script>
+    function showDateGreeting() {
+      const today = new Date();
+
+      const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+      const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+      const weekday = days[today.getDay()];
+      const day = today.getDate();
+      const month = months[today.getMonth()];
+      const year = today.getFullYear();
+
+      const hour = today.getHours();
+      let greeting = "";
+      if (hour < 12) {
+        greeting = "Good Morning";
+      } else if (hour < 18) {
+        greeting = "Good Afternoon";
+      } else {
+        greeting = "Good Evening";
+      }
+
+      const dateString = `Today is ${weekday}, ${day} ${month} ${year},
+        Welcome, and ${greeting} to You.`;
+      document.getElementById("dateGreeting").innerText = dateString;
+
+      const lastDay = new Date(year, 11, 31);
+      const diff = Math.ceil((lastDay - today) / (1000 * 60 * 60 * 24));
+      document.getElementById("daysLeft").innerText = `Number of days left till end of year: ${diff}`;
+    }
+
+    showDateGreeting();
+  </script>
+
+</body>
+</html>
